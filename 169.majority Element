@@ -1,0 +1,12 @@
+def majorityElement(self, nums: List[int]) -> int:
+        fq=0
+        ans=0
+        for i in nums:
+            if fq==0:
+                ans=i
+            if ans==i:
+                fq+=1
+            else:
+                fq-=1
+        return ans
+        
